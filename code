@@ -80,3 +80,83 @@ public static void main(String[] args) {
     system.addEmployee(employee1, 0);
     system.removeEmployee(0);
 }  
+
+//Room class and its properties class Room { private int roomNumber; private String roomType; private boolean available;
+
+
+
+public Room(int roomNumber, String roomType, boolean available) {
+    this.roomNumber = roomNumber;
+    this.roomType = roomType;
+    this.available=available;
+}
+
+public int getRoomNumber() {
+    return roomNumber;
+}
+
+public String getRoomType() {
+    return roomType;
+}
+
+public boolean isAvailable() {
+    return available;
+}
+
+public void setAvailable(boolean available) {
+    this.available = available;
+}
+
+
+
+//Guest class and its properties class Guest { private String name; private String contact;
+
+
+
+public Guest(String name, String contact) {
+    this.name = name;
+    this.contact = contact;
+}
+
+public String getName() {
+    return name;
+}
+
+public String getContact() {
+    return contact;
+}
+
+//Booking class and its properties class Booking { private Guest guest; private Room room;
+
+
+
+
+public Booking(Guest guest, Room room) {
+    this.guest = guest;
+    this.room = room;
+}
+
+public Guest getGuest() {
+    return guest;
+}
+
+public Room getRoom() {
+    return room;
+}
+
+//Employee class and its properties class Employee { private String name; private String role;
+
+
+
+public Employee(String name, String role) {
+    this.name = name;
+    this.role = role;
+}
+
+public String getName() {
+    return name;
+}
+
+public String getRole() {
+    return role;
+}
